@@ -1,4 +1,4 @@
-package cpu
+package facade
 
 type CPU interface {
 	SomeCPULogic() error

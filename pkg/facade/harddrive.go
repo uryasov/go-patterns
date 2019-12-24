@@ -1,4 +1,4 @@
-package harddrive
+package facade
 
 type HardDrive interface {
 	SomeHardDriveLogic() error

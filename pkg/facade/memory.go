@@ -1,4 +1,4 @@
-package memory
+package facade
 
 type Memory interface {
 	SomeMemoryLogic() error
