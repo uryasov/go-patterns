@@ -13,10 +13,7 @@ func (h *hardDrive) SomeHardDriveLogic() error {
 	return nil
 }
 
-func NewHardDrive(
-	someParamInt int,
-	someParamStr string,
-) HardDrive {
+func NewHardDrive(someParamInt int, someParamStr string) HardDrive {
 	return &hardDrive{
 		someParamInt: someParamInt,
 		someParamStr: someParamStr,

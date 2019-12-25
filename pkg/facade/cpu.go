@@ -13,10 +13,7 @@ func (c *cpu) SomeCPULogic() error {
 	return nil
 }
 
-func NewCPU(
-	someParamInt int,
-	someParamStr string,
-) CPU {
+func NewCPU(someParamInt int, someParamStr string) CPU {
 	return &cpu{
 		someParamInt: someParamInt,
 		someParamStr: someParamStr,
