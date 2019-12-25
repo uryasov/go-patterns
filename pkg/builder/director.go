@@ -15,8 +15,7 @@ type director struct {
 }
 
 func (d *director) Construct() string {
-	var finishedProduct string
-	finishedProduct += d.builder1.buildPartsBegin() + " " + d.builder1.buildPartsMiddle() + " " + d.builder1.buildPartsEnd()
+	finishedProduct := d.builder1.buildPartsBegin() + " " + d.builder1.buildPartsMiddle() + " " + d.builder1.buildPartsEnd()
 	return finishedProduct
 }
 
