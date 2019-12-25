@@ -2,6 +2,12 @@ package facade
 
 import "testing"
 
+const (
+	basicTestName = "basicTest"
+	someInt       = 1
+	someStr       = "1"
+)
+
 func Test_cpu_SomeCPULogic(t *testing.T) {
 	type fields struct {
 		someParamInt int
@@ -13,10 +19,10 @@ func Test_cpu_SomeCPULogic(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			"basicTest",
+			basicTestName,
 			fields{
-				someParamInt: 1,
-				someParamStr: "1",
+				someParamInt: someInt,
+				someParamStr: someStr,
 			},
 			false,
 		},
@@ -45,10 +51,10 @@ func Test_hardDrive_SomeHardDriveLogic(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			"basicTest",
+			basicTestName,
 			fields{
-				someParamInt: 1,
-				someParamStr: "1",
+				someParamInt: someInt,
+				someParamStr: someStr,
 			},
 			false,
 		},
@@ -77,10 +83,10 @@ func Test_memory_SomeMemoryLogic(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			"basicTest",
+			basicTestName,
 			fields{
-				someParamInt: 1,
-				someParamStr: "1",
+				someParamInt: someInt,
+				someParamStr: someStr,
 			},
 			false,
 		},
