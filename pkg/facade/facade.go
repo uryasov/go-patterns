@@ -23,16 +23,13 @@ type facade struct {
 }
 
 func (f *facade) Start() error {
-	err := f.cpuer.SomeCPULogic()
-	if err != nil {
+	if err := f.cpuer.SomeCPULogic(); err != nil {
 		return err
 	}
-	err = f.harddriver.SomeHardDriveLogic()
-	if err != nil {
+	if err := f.harddriver.SomeHardDriveLogic(); err != nil {
 		return err
 	}
-	err = f.memoryer.SomeMemoryLogic()
-	if err != nil {
+	if err := f.memoryer.SomeMemoryLogic(); err != nil {
 		return err
 	}
 	return nil
