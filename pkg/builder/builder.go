@@ -1,5 +1,6 @@
 package builder
 
+// Builderer ...
 type Builderer interface {
 	buildPartsBegin() string
 	buildPartsMiddle() string
@@ -19,6 +20,7 @@ func (b *builder) buildPartsEnd() string {
 	return "order"
 }
 
+// NewBuilder ...
 func NewBuilder() Builderer {
 	return &builder{}
 }
