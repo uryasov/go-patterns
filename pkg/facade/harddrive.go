@@ -1,6 +1,6 @@
 package facade
 
-type HardDrive interface {
+type HardDriver interface {
 	SomeHardDriveLogic() error
 }
 
@@ -13,7 +13,7 @@ func (h *hardDrive) SomeHardDriveLogic() error {
 	return nil
 }
 
-func NewHardDrive(someParamInt int, someParamStr string) HardDrive {
+func NewHardDrive(someParamInt int, someParamStr string) HardDriver {
 	return &hardDrive{
 		someParamInt: someParamInt,
 		someParamStr: someParamStr,

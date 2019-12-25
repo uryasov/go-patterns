@@ -1,6 +1,6 @@
 package facade
 
-type Facade interface {
+type Facader interface {
 	Start() error
 }
 
@@ -39,7 +39,7 @@ func NewFacade(
 	cpuer cpuer,
 	harddriver harddriver,
 	memoryer memoryer,
-) Facade {
+) Facader {
 	return &facade{
 		cpuer:      cpuer,
 		harddriver: harddriver,
