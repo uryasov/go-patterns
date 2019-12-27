@@ -4,11 +4,14 @@ import (
 	"fmt"
 
 	"github.com/uryasov/go-patterns/pkg/builder"
+	"github.com/uryasov/go-patterns/pkg/director"
+	"github.com/uryasov/go-patterns/pkg/models"
 )
 
 func main() {
-	newBuilder := builder.NewBuilder()
-	newDirector := builder.NewDirector(newBuilder)
-	product := newDirector.Construct()
-	fmt.Println(product)
+	var product models.Product
+	newBuilder := builder.NewBuilder(&product)
+	newDirector := director.NewDirector(newBuilder)
+	newDirector.Construct()
+	fmt.Println(product.Content)
 }
